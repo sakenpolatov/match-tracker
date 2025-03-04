@@ -4,9 +4,10 @@ import { useMatches } from "@/hooks/useMatches";
 import { Container } from "./container";
 import { MatchCard } from "./matchCard";
 import { Skeleton } from "@/components/ui/skeleton"; 
+import { NoData } from "./no-data";
 
 export const MatchList = () => {
-  const { data: matches = [], isLoading, error } = useMatches();
+  const { data: matches = [], isLoading ,error} = useMatches();
 	const skeletonCount = matches.length || 7;
 
   if (isLoading) {
@@ -21,9 +22,14 @@ export const MatchList = () => {
     );
   }
 
-  if (error) {
-    return <p className="text-red-500">Ошибка загрузки данных</p>;
+	if (error) {
+    return (
+      <Container>
+        <NoData message="Ошибка загрузки данных" />
+      </Container>
+    );
   }
+
 
   return (
     <Container>
