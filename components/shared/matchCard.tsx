@@ -8,7 +8,6 @@ interface MatchCardProps {
 }
 
 export const MatchCard: React.FC<MatchCardProps> = ({ match }) => {
-  console.log("Match status:", match.status);
 
   return (
     <div className="flex items-center justify-between bg-[#0B0E12] text-white p-4 rounded-md shadow-md w-full h-[87px]">
