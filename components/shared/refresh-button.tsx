@@ -23,12 +23,12 @@ export const RefreshButton = () => {
         isFetching ? buttonStyles.disabled : buttonStyles.default
       )}
     >
-      Обновить
+     <span className="select-none text-[18px]">Обновить</span>
       <Image
         src="/icons/refresh.svg"
         alt="Refresh Icon"
-        width={24}
-        height={24}
+        width={26}
+        height={26}
         className={cn(isFetching && "animate-spin-reverse")}
       />
     </Button>
