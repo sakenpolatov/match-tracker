@@ -2,9 +2,9 @@
 
 import { useMatches } from "@/hooks/useMatches";
 import { Container } from "./container";
-import MatchCard from "./matchCard";
+import { MatchCard } from "./matchCard";
 
-export default function MatchList() {
+export const MatchList = () => {
   const { data: matches = [], isLoading, error } = useMatches();
 
   if (isLoading) return <p className="text-white">Загрузка...</p>;
@@ -21,4 +21,4 @@ export default function MatchList() {
       </div>
     </Container>
   );
-}
+};

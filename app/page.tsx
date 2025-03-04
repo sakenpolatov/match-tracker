@@ -1,5 +1,5 @@
-import Header from "@/components/shared/header";
-import MatchList from "@/components/shared/matchList";
+import { Header, MatchList } from "@/components/shared";
+
 
 
 export default function Home() {
