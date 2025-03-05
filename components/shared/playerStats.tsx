@@ -5,7 +5,7 @@ interface PlayerCardProps {
   player: Player;
 }
 
-export const PlayerCard: React.FC<PlayerCardProps> = ({ player }) => {
+export const PlayerStats: React.FC<PlayerCardProps> = ({ player }) => {
   return (
     <div className="bg-[#101318] px-4 py-3 rounded-md flex items-center w-[286px] h-[52px] gap-2">
 
