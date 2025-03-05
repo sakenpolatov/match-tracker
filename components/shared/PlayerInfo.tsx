@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Player } from "@/types/match";
 
-interface PlayerCardProps {
+interface PlayerInfoProps {
   player: Player;
 }
 
-export const PlayerStats: React.FC<PlayerCardProps> = ({ player }) => {
+export const PlayerInfo: React.FC<PlayerInfoProps> = ({ player }) => {
   return (
     <div className="bg-[#101318] px-4 py-3 rounded-md flex items-center w-[286px] h-[52px] gap-2">
 

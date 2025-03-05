@@ -1,5 +1,6 @@
 import { Team } from "@/types/match";
-import { PlayerStats } from "./PlayerStats";
+import { PlayerInfo } from "./PlayerInfo";
+
 
 
 interface TeamStatsProps {
@@ -12,7 +13,7 @@ export const TeamStats: React.FC<TeamStatsProps> = ({ team }) => {
 
       <div className="flex gap-4 justify-center">
         {team.players.map((player, index) => (
-          <PlayerStats key={index} player={player} />
+          <PlayerInfo key={index} player={player} />
         ))}
       </div>
 
