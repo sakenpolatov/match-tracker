@@ -36,7 +36,7 @@ export const MatchCard: React.FC<MatchCardProps> = ({ match }) => {
       <div className="flex items-center gap-4">
         <span className="text-lg font-medium">{match.awayTeam.name}</span>
         <Image src="/icons/team.svg" alt="Team 2 Logo" width={48} height={48} />
-        <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+        <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${isOpen ? "rotate-180" : ""}`} />
       </div>
     </div>
   </CollapsibleTrigger>
