@@ -23,18 +23,18 @@ export const MatchCard: React.FC<MatchCardProps> = ({ match }) => {
     >
       <div className="flex items-center gap-4">
         <Image src="/icons/team.svg" alt="Team 1 Logo" width={48} height={48} />
-        <span className="text-lg font-medium">{match.homeTeam.name}</span>
+        <span className="text-lg font-medium select-none cursor-default pointer-events-none">{match.homeTeam.name}</span>
       </div>
 
       <div className="flex flex-col items-center gap-1">
-        <span className="text-[20px] font-semibold leading-[24.2px]">
+        <span className="text-[20px] font-semibold leading-[24.2px] select-none cursor-default pointer-events-none">
           {match.homeScore} : {match.awayScore}
         </span>
         <MatchStatus status={match.status} />
       </div>
 
       <div className="flex items-center gap-4">
-        <span className="text-lg font-medium">{match.awayTeam.name}</span>
+        <span className="text-lg font-medium select-none cursor-default pointer-events-none">{match.awayTeam.name}</span>
         <Image src="/icons/team.svg" alt="Team 2 Logo" width={48} height={48} />
         <ChevronDown className={`w-5 h-5 transition-transform duration-500 ${isOpen ? "rotate-180" : ""}`} />
       </div>

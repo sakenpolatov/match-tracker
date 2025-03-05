@@ -19,7 +19,7 @@ export const MatchStatus: React.FC<MatchStatusProps> = ({ status }) => {
   return (
     <span
       className={cn(
-        "px-2 py-1 rounded-md text-sm",
+        "px-2 py-1 rounded-md text-sm select-none cursor-default pointer-events-none",
         statusStyles[normalizedStatus] || "bg-gray-700 text-white"
       )}
     >
