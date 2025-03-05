@@ -2,8 +2,6 @@ import { Team } from "@/types/match";
 import { PlayerStats } from "./PlayerStats";
 
 
-
-
 interface TeamStatsProps {
   team: Team;
 }
