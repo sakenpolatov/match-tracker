@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useMatches } from "@/hooks/useMatches";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -24,13 +23,13 @@ export const RefreshButton = () => {
       )}
     >
      <span className="select-none text-[18px]">Обновить</span>
-      <Image
-        src="/icons/refresh.svg"
-        alt="Refresh Icon"
-        width={26}
-        height={26}
-        className={cn(isFetching && "animate-spin-reverse")}
-      />
+     <img
+  src="/icons/refresh.svg"
+  alt="Refresh Icon"
+  width={26}
+  height={26}
+  className={cn(isFetching && "animate-spin-reverse")}
+/>
     </Button>
   );
 };
