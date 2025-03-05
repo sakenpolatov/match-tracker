@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 const buttonStyles = {
-  base: "flex items-center justify-center gap-2 w-[204px] h-[56px] font-bold text-lg rounded-md transition",
+  base: "flex items-center justify-center gap-2 w-[204px] h-[56px] font-bold text-lg rounded-md transition cursor-pointer",
   disabled: "bg-[#701328] text-[#787878] cursor-not-allowed",
   default: "bg-[#EB0237] active:bg-[#A01131] hover:bg-[#EB0237] focus:bg-[#EB0237]",
 };
